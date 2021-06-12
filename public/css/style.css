@@ -1,0 +1,134 @@
+form .avatar{
+    width: 55px;
+    margin-bottom: 15px;
+}
+
+.navbar .container-avatar,
+.pub-image .container-avatar{
+    width: 35px;
+    height: 35px;
+    border-radius: 900px;
+    overflow: hidden;
+    margin-left:20px;
+}
+
+.navbar .container-avatar img,
+.pub-image .container-avatar img{
+    height: 100%;
+}
+
+.pub-image{
+    margin-bottom: 25px;
+}
+
+.pub-image .container-avatar{
+    float:left;
+    margin-right:15px;
+}
+.pub-image .data-user{
+    font-weight: bold;
+    line-height: 35px;
+}
+
+.pub-image .data-user a{
+    color: #444;
+}
+
+.pub-image .nickname{
+    color:gray;
+}
+
+.image-container{
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.image-detail{
+    max-height: 1000px;
+}
+
+.image-container img{
+    width: 100%;
+}
+
+.pub-image .card-body{
+    padding:0px;
+}
+
+.pub-image .description{
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+.pub-image .btn-comments{
+    margin: 20px;
+    margin-top:0px;
+    margin-left:0px;
+}
+
+.likes{
+    float:left;
+    padding-left:20px;
+    padding-right: 10px;
+}
+
+.likes img{
+    width: 20px;
+    display:inline;
+}
+
+.pub-image_detail .comment{
+    padding:30px;
+}
+.comment{
+    padding:10px;
+}
+h1 {
+    display: block !important;
+    font-size: 2em !important;
+    margin-bottom: 0.5em !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    font-weight: bold !important;
+}
+h2 {
+    display: block !important;
+    font-size: 1.5em !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+hr {
+    display: block !important;
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    border-style: inset !important;
+    border-width: 1px !important;
+}
+
+.number-likes{
+    color:gray;
+    font-size: 11px;
+}
+.profile-user {
+    height: 150px;
+    margin-bottom: 40px; 
+}
+
+.profile-user .container-avatar{
+    width:150px;
+    height: 150px;
+    border-radius:900px;
+    overflow: hidden;
+    float:left;
+}
+.profile-user .container-avatar img{
+    height: 100%;
+}
+.profile-user .user-info{
+    float: left;
+    padding-left: 30px;
+    padding-top: 20px;
+}
