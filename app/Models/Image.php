@@ -13,16 +13,16 @@ class Image extends Model
 
     //relacion One to many / de uno a muchos
     public function comments(){
-        return $this->hasMany(comment::class)->orderBy('id', 'desc');
+        return $this->hasMany(Comment::class)->orderBy('id', 'desc');
     }
 
     //Relacion one to many
     public function likes(){
-        return $this->hasMany(like::class);
+        return $this->hasMany(Like::class);
     }
 
     //relacion many to one / de uno a muchos
     public function user(){
-        return $this->belongsTo(user::class, 'user_id');
+        return $this->belongsTo(User::class, 'user_id');
     }
 }

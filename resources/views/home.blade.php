@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                @include('includes\message')
+                @include('includes/message')
                 @foreach ($images as $image)
                     <!--Mostrar tarjeta de imagen-->
                     @include('includes.image', [

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\models\Image;
+use App\Models\Image;
 use App\Models\Comment;
 use App\Models\Like;
 use Illuminate\Support\Facades\Auth;
@@ -63,7 +63,7 @@ class ImageController extends Controller
 
     public function detail($id)
     {
-        $image = image::find($id);
+        $image = Image::find($id);
 
         return view('image.detail', [
             'image' => $image,
@@ -73,7 +73,7 @@ class ImageController extends Controller
     public function delete($id)
     {
         $user = Auth::user();
-        $image = image::find($id);
+        $image = Image::find($id);
         $comments = Comment::where('image_id', $id)->get();
         $likes = Like::where('image_id', $id)->get();
 

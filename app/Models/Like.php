@@ -14,7 +14,7 @@ class Like extends Model
     //relacion many to one / de uno a muchos
     public function user()
     {
-        return $this->belongsTo(user::class, 'user_id');
+        return $this->belongsTo(User::class, 'user_id');
     }
 
     //relacion many to one / de uno a muchos
