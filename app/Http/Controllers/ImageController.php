@@ -20,10 +20,15 @@ class ImageController extends Controller
 
     public function create()
     {
-        return view('image.create');
+        if(Auth::user()->role == 'admin'){
+            return view('image.create');
+        }else{
+            return redirect()->route('home')->with(array(
+                'message' => 'No puedes subir imagenes'
+            ));
+        }
     }
-    public function save(Request $request)
-    {
+    public function save(Request $request){
         //validacion
         $validate = $this->validate($request, [
             'description' => 'required',
