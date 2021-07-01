@@ -57,11 +57,7 @@
                                     {{ __('Login') }}
                                 </button>
 
-                                @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
-                                    </a>
-                                @endif
+                                <a href="https://redsocial.allisonjpb.com/register" class="btn btn-link">sign in</a>
                             </div>
                         </div>
                     </form>

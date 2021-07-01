@@ -26,6 +26,7 @@
                             <li>Eliminar comentarios (tuyos que hayan hecho en tu post) </li>
                             <li>Entrar en el perfil de los  demás usuarios</li>
                             <li>Ver un listado de todos los usuarios registrados</li>
+                            <li>Ver un listado de todos los post a los que ha dado like</li>
                         </ul>
                         <hr/>
                         <h2>Contacto</h2>

@@ -23,6 +23,7 @@
             <img src="{{ route('image.file', ['filename' => $image->image_path]) }}" alt="" />
         </div>
     </div>
+    </a>
     <div class="description">
         <span class="nickname">{{ '@' . $image->user->nick }} </span>
         <span class="nickname date">{{ ' | ' . \FormatTime::LongTimeFilter($image->created_at) }}</span>
@@ -52,6 +53,6 @@
                 Comentarios ({{ count($image->comments) }})
             </a>
         </div>
-        </a>
+        
     </div>
 </div>
