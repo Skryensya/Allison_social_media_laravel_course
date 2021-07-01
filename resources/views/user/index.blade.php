@@ -6,16 +6,16 @@
             <div class="col-md-8">
 
                 <h1>Personas registradas</h1>
-                <form action="{{ route('user.index') }}" method="GET" id="buscador">
-                    <div class='row'>
-                        <div class="form-group col">
-                            <input type="text" id="search" class="form-control" />
+                    <form action="{{ route('user.index') }}" method="GET" id="buscador">
+                        <div class='row'>
+                            <div class="form-group col">
+                                <input type="text" id="search" class="form-control" />
+                            </div>
+                            <div class="form-group col btn-search">
+                                <input type="submit" value="buscar" class="btn btn-success">
+                            </div>
                         </div>
-                        <div class="form-group col btn-search">
-                            <input type="submit" value="buscar" class="btn btn-success">
-                        </div>
-                    </div>
-                </form>
+                    </form>
                 <hr>
                 @foreach ($users as $user)
                     <div class="profile-user">
