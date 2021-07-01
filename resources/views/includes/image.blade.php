@@ -18,6 +18,7 @@
     </div>
 
     <div class="card-body">
+    <a href="{{ route('image.detail', ['id' => $image->id]) }}">
         <div class="image-container">
             <img src="{{ route('image.file', ['filename' => $image->image_path]) }}" alt="" />
         </div>
@@ -51,5 +52,6 @@
                 Comentarios ({{ count($image->comments) }})
             </a>
         </div>
+        </a>
     </div>
 </div>

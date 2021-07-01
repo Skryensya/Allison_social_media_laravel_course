@@ -43,6 +43,7 @@ Route::get('/', function () {
 //GENERALES
 Auth::routes();
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/about', [App\Http\Controllers\HomeController::class, 'about'])->name('about');
 
 //USUARIO
 Route::get('/people/{seach?}', [userController::class, 'index'])->name('user.index');

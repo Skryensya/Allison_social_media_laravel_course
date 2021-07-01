@@ -60,10 +60,10 @@
                             @endif
                         @else
                             <li class="nav-item">
-                                <a href="{{ route('home') }}" class="nav-link">Inicio</a>
+                                <a href="{{ route('about') }}" class="nav-link">About</a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{ route('user.index') }}" class="nav-link">Personas</a>
+                                <a href="{{ route('home') }}" class="nav-link">Inicio</a>
                             </li>
                             <li class="nav-item">
                                 <a href="{{ route('like.index') }}" class="nav-link">Favoritas</a>

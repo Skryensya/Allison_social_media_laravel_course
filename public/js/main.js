@@ -1,5 +1,3 @@
-
-
 window.addEventListener("load", function(){
 	$('.btn-like').css('cursor','pointer');
 	$('.btn-dislike').css('cursor','pointer');
@@ -46,9 +44,4 @@ window.addEventListener("load", function(){
         });
 
 	});
-
-    // BUSCADOR
-    $('#buscador').submit(function(){
-        $(this).attr('action', '/people/'+$('#buscador #search').val());
-    })
 });
