@@ -40,25 +40,36 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//GENERALES
 Auth::routes();
-
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/configuracion', [UserController::class, 'config'])->name('config');
+
+//USUARIO
+Route::get('/people/{seach?}', [userController::class, 'index'])->name('user.index');
 Route::post('/user/edit', [UserController::class, 'update'])->name('user.update');
+Route::get('/perfil/{id}', [userController::class, 'profile'] )->name('user.profile');
+Route::get('/configuracion', [UserController::class, 'config'])->name('config');
 Route::get('/user/avatar/{filename?}', [UserController::class, 'getImage'])->name('user.avatar');
+
+//IMAGEN
 Route::get('/subir-imagen', [ImageController::class, 'create'] )->name('image.create');
 Route::post('/image/save', [ImageController::class, 'save'])->name('image.save');
 Route::get('/image/file/{filename?}', [imageController::class, 'getImage'])->name('image.file');
 Route::get('/image/detalle/{id}', [imageController::class, 'detail'])->name('image.detail');
-
-Route::post('/comment/save', [CommentController::class, 'save'])->name('comment.save');
-Route::get('/comment/delete/{id}', [commentController::class, 'delete'])->name('comment.delete');
-Route::get('/like/{image_id}', [LikeController::class, 'like'])->name('like.save');
-Route::get('/dislike/{image_id}', [LikeController::class, 'dislike'])->name('like.delete');
-Route::get('/likes', [LikeController::class, 'index'] )->name('like.index');
-Route::get('/perfil/{id}', [userController::class, 'profile'] )->name('user.profile');
-
-
 Route::get('/image/delete/{id}', [imageController::class, 'delete'])->name('image.delete');
 Route::get('/image/editar/{id}', [imageController::class, 'edit'])->name('image.edit');
 Route::post('/image/update', [imageController::class, 'update'])->name('image.update');
+
+//COMENTARIOS
+Route::post('/comment/save', [CommentController::class, 'save'])->name('comment.save');
+Route::get('/comment/delete/{id}', [commentController::class, 'delete'])->name('comment.delete');
+
+
+//LIKES
+Route::get('/like/{image_id}', [LikeController::class, 'like'])->name('like.save');
+Route::get('/dislike/{image_id}', [LikeController::class, 'dislike'])->name('like.delete');
+Route::get('/likes', [LikeController::class, 'index'] )->name('like.index');
+
+
+
+

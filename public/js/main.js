@@ -46,4 +46,9 @@ window.addEventListener("load", function(){
         });
 
 	});
+
+    // BUSCADOR
+    $('#buscador').submit(function(){
+        $(this).attr('action', '/people/'+$('#buscador #search').val());
+    })
 });
